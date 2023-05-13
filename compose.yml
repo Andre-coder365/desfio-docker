@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  web:
+    image: httpd:latest
+    container_name: my-web-apache-app
+    volumes:
+      - ./website:/usr/local/apache2/htdocs
+    ports:
+      - 80:80
